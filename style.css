@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(49, 46, 46);
+}
+
+h1 {
+  color: white;
+  font-family: "Fira Sans", serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+}
