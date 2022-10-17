@@ -1,5 +1,9 @@
 body {
-  background-color: #062f4f;
+  background: linear-gradient(
+    109.6deg,
+    rgb(187, 187, 187) 16%,
+    rgb(5, 84, 94) 91.1%
+  );
   font-family: "Fira Sans", serif;
   height: 100%;
 }
@@ -177,8 +181,9 @@ main {
 }
 
 .hero p {
-  color: #eb6e80;
+  color: #245f68;
   font-size: 20px;
+  font-weight: bolder;
 }
 
 h1 {
