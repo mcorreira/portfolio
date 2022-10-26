@@ -219,6 +219,10 @@ h1 {
 
 .about-heading {
   margin-bottom: 9rem;
+  color: #245f68;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .heading-sec__main::after {
@@ -227,8 +231,33 @@ h1 {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #facf0f;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
+}
+
+.skills-heading {
+  margin-bottom: 9rem;
+  color: #245f68;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+.projects-heading {
+  margin-bottom: 9rem;
+  color: #245f68;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+.contact-heading {
+  margin-bottom: 9rem;
+  color: #245f68;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.skillsr {
+  padding-left: 12%;
 }
