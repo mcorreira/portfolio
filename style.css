@@ -261,3 +261,18 @@ h1 {
 .skillsr {
   padding-left: 12%;
 }
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+h3 {
+  color: #ece8e5;
+  font-size: 48px;
+}
+
+p {
+  color: #245f68;
+  font-weight: bold;
+}
