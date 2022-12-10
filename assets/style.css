@@ -1,0 +1,291 @@
+/* Variables */
+:root {
+  --color-primary: #245f68;
+  --color-secondary: #55848a;
+  --color-slate: #bbbbbb;
+  --color-grey: #d7cec7;
+  --color-white: #ece8e5;
+  --f-main: "Fira Sans", sans-serif;
+  --transition: all 10s cubic-bezier(.165, .84, .44 1);
+  --shadow: 8px 15px 40px rgba(0, 0, 0, 0.1);
+  --background: linear-gradient(109.6deg, rgb(187, 187, 187) 16%, rgb(5, 84, 94) 91.1%);
+}
+
+/*Helper */
+body {
+  font-family: var(--f-main);
+  line-height: 1.7;
+  background: linear-gradient(109.6deg, rgb(187, 187, 187) 16%, rgb(5, 84, 94) 91.1%);
+  height: 100%;
+  margin: 0;
+  padding: 0 100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+.h1,
+h2,
+.h2 h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+}
+
+* {
+  text-decoration: none;
+  transition: var(--transition);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+img {
+  width: 100%;
+}
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.text-brand {
+  color: #ece8e5;
+}
+
+.display-2 {
+  color: var(--color-grey);
+}
+
+.lead {
+  color: var(--color-primary);
+}
+
+.home {
+  margin-left: 50px;
+}
+
+/* Nav Bars */
+
+.navbar {
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: var(--color-secondary);
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-grey)
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  font-weight: 500;
+  color: var(--color-grey);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-grey);
+}
+
+#snav {
+  position: fixed;
+  top: 35%;
+  z-index: 9999;
+  font-size: 40px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#snav ul {
+  list-style: none;
+}
+
+#snav * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#snav li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+
+#snav .fa {
+  vertical-align: middle;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+
+#snav li span {
+  font-size: 20px;
+  margin-top: 10px;
+  height: 35px;
+  line-height: 35px;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  padding: 0px 15px;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  z-index: 3;
+}
+
+#snav li a:hover .fa {
+  transform: rotate(720deg);
+}
+
+#snav li a:hover span {
+  visibility: visible;
+}
+
+#snav li .fa {
+  background-color: #eee;
+  color: #555;
+}
+
+#li,
+#snav a:hover .fa-linkedin {
+  background-color: #1666c2;
+}
+
+#gh,
+#snav a:hover .fa-github {
+  background-color: #24292f;
+}
+
+#cv,
+#snav a:hover .fa-file-lines {
+  background-color: #3dc25d;
+}
+
+#email,
+#snav a:hover .fa-paper-plane {
+  background-color: purple;
+}
+
+#snav.en {
+  left: 0;
+  text-align: left;
+}
+
+#snav.en li span {
+  left: -100px;
+}
+
+#snav.en li a:hover span {
+  left: 45px;
+}
+
+.section-title {
+  max-width: 568px;
+  margin: 30px auto 68px auto;
+}
+
+/* About */
+
+.section-title .line {
+  width: 68px;
+  height: 2px;
+  background-color: var(--color-primary);
+  display: inline-block;
+}
+
+.section-connector {
+  position: relative;
+}
+
+.section-connector::after {
+  content: '';
+  width: 2px;
+  height: 100px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: -100px;
+  left: 50%;
+}
+
+/* Projects */
+.project {
+  overflow: hidden;
+  position: relative;
+}
+
+.project .content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-secondary);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project img {
+  object-fit: cover;
+}
+
+.project img,
+.project .content {
+  transition: var(--transition);
+}
+
+.project:hover .content {
+  top: 0;
+}
+
+.project:hover img {
+  transform: translateY(-100%);
+}
+
+/* Skills */
+.skills {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.skills img {
+  height: 40px;
+}

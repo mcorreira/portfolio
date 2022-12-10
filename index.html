@@ -5,22 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+  
+    <script src="https://kit.fontawesome.com/55b5f7279c.js" crossorigin="anonymous"></script>
+  
 
-    <script
-      <script src="https://kit.fontawesome.com/55b5f7279c.js" crossorigin="anonymous"></script>
-    ></script>
+    
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
     />
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,28 +26,41 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 
     <title>M. Correira Portfolio</title>
   </head>
   <body>
-    <nav class="nav">
-      <div class="container">
-        <div class="logo">
-          <a href="#">Logo</a>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">MMC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="mainListDiv" class="main_list">
-          <ul class="navlinks">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
-    <div id="snav" class="en">
+ <!--Side NavBar-->
+ <div id="snav" class="en">
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/megancorreiralovesmath/">
@@ -68,129 +78,165 @@
         </li>
       </ul>
     </div>
-
-    <main class="pages">
-      <section class="hero">
-        <p>Hello, my name is</p>
-
-        <h1 class="name" id="name">Megan M. Correira</h1>
-        <h2 class="position" id="position">Frontend Developer</h2>
-
-        <p>
-          I develop elegantly solid code designed to attract and retain customer<br>
-          uitlization. My goal is to apply my skills to elevate frontend web<br>
-          development. Currently, I'm focused on optimizing my skills.
-        </p>
-      </section>
-  <section class="about" id="about">
-    <div class="about-container">
-      <h2 class="about-heading"><span class="heading-sec_main">
-          About Me
-      </span></h2>
-      <div class="row">
-          <div class="col-9 mt-20">
-          <h3>Junior Frontend Developer</h3>
-            <p>Welcome to my Portfolio! I am an educator, turned "techie". It is my goal to provide the very best frontend web development experience for my clients. I have a variety of projects I have completed or am currently engaged with that demonstrate my capacity to implement the skills I have learned and am currently learning. I firmly believe that we are only limited by our <italic>vision</italic> of our potential, and mine is limitless! I look forward to hearing from you.</p>
+ <!--Home-->
+    <section id="home" class="d-flex align-items-center min-vh-100 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h2 class="lead mb-3 fw-bold">Hello, my name is</h2>
+            <h1 class="display-2 fw-bold id="name"><span class="text-brand">Megan M. Correira</span><br>
+            <span>Frontend Developer</span></h1>
+            <h2 class="lead mt-3 mb-5 fw-bold">I develop elegantly solid code designed to attract and retain customer<br>
+            uitlization. My goal is to apply my skills to elevate frontend web<br>
+            development. Currently, I'm focused on optimizing my skills.
+            </h2>
           </div>
-          <div class="mb-10 col-3"> 
-           <img class="img-fluid" src="assets/images/correiraportpic.png" alt="Picture of Megan">
+        </div>
+      </div>
+    </section>
+
+    <!--About-->
+    <section id="about" class="section-padding section-connector">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>About</h1>
+              <div class="line"></div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Skills-->
+    <section id="skills" class="section padding section-connector">
+      <div class="container-fluid">
+        <div class="section-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-title text-center">
+                  <h1>Skills</h1>
+                  <p>Skills I've develped through training and projects.</p>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <img src="./assets/images/htmlicon.png" alt="HTML 5">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <img src="./assets/images/cssicon.png" alt="CSS">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <img src="./assets/images/jsicon.png" alt="JavaScript">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <img src="./assets/images/bsicon.png" alt="Bootstrap">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <img src="./assets/images/githubicon.png" alt="GitHub">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <img src="./assets/images/reacticon.png" alt="React">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <img src="./assets/images/netlifyicon.png" alt="Netlify">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <img src="./assets/images/vscicon.png" alt="VS Code">
+              </div>
+             </div>
+           </div>
+         </div>  
        </div>
+      </div>  
+    </section>  
+
+
+
+    <!--Projects-->
+    <section id="projects" class="section padding section-connector">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h1>Projects</h1>
+              <p>Finished projects, highlighting relevant skills.</p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      <div class="row g-2">
+        <div class="col-lg-4 col-sm-6">
+          <div class="project">
+            <img src="./assets/images/fp1.jpeg" alt="fake project 1">
+            <div class="content">
+              <a href="./assets/images/fp1.jpeg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="project">
+            <img src="./assets/images/fp2.jpeg" alt="fake project 2">
+            <div class="content">
+              <a href="./assets/images/fp2.jpeg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="project">
+            <img src="./assets/images/fp3.jpeg" alt="fake project 3">
+            <div class="content">
+              <a href="./assets/images/fp3.jpeg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="project">
+            <img src="./assets/images/fp4.jpeg" alt="fake project 4">
+            <div class="content">
+              <a href="./assets/images/fp4.jpeg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="project">
+            <img src="./assets/images/fp5.jpeg" alt="fake project 5">
+            <div class="content">
+              <a href="./assets/images/fp5.jpeg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="project">
+            <img src="./assets/images/fp6.jpeg" alt="fake project 6">
+            <div class="content">
+              <a href="./assets/images/fp6.jpeg" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+            </div>
+          </div>
+        </div>
       </div> 
-    </div>
-  </section> 
-      <section class="skills" id="skills">
-        <div class="main-container">
-         <h2 class="skills-heading"><span class="heading-sec_main">
-          Tech Skills
-        </span></h2>
-        </div>
-    
-    <div class="row text-center text-lg-start skillsr g-3">
-    <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-block h-50 w-50">
-        <img id="html" class="img-fluid img-thumbnail" src="assets/images/htmlicon.svg" alt="HTML5 Icon" width="100%" height="auto">
-      </div>
-    </div>  
-    <div class="col-lg-3 col-md-4 col-4 p-2">
-      <div class="d-flex mb-4 h-50 w-100">
-        <img id="css" class="img-fluid img-thumbnail" src="assets/images/cssicon.svg" alt="CSS Icon">
-      </div>
-    </div>
-      <div class="col-lg-3 col-md-4 col-4 p-2">
-      <div class="d-flex mb-4 h-50 w-100">
-        <img id="js" class="img-fluid img-thumbnail" src="assets/images/jsicon.svg" alt="Javascript Icon">
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-4p-2">
-      <div class="d-flex mb-4 h-50 w-50">
-        <img id="bs" class="img-fluid img-thumbnail" src="assets/images/bsicon.svg" alt="Bootstrap Icon">
-      </div>
-    </div>
-    </div>
-    <div class="row text-center text-lg-start skillsr">
-    <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-flex mb-4 h-50 w-100">
-        <img id="react" class="img-fluid img-thumbnail" src="assets/images/reacticon.svg" alt="React Icon">
-      </div>
-    </div>  
-    <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-flex mb-4 h-50 w-100">
-        <img id="api" class="img-fluid img-thumbnail" src="assets/images/apicon.png" alt="API Icon">
-      </div>
-    </div>
-      <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-flex mb-4 h-50 w-100">
-        <img id="cli" class="img-fluid img-thumbnail" src="assets/images/clicon.png" alt="CLI Icon">
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-flex mb-4 h-50 w-50">
-        <img id="flex" class="img-fluid img-thumbnail" src="assets/images/flexicon.png" alt="Flexbox Icon">
-      </div>
-    </div>
-    </div> <div class="row text-center text-lg-start skillsr">
-    <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-flex mb-4 h-50 w-100">
-        <img id="html" class="img-fluid img-thumbnail" src="assets/images/gitbashicon.svg" alt="Git Bash Icon">
-      </div>
-    </div>  
-    <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-flex mb-4 h-50 w-100">
-        <img id="css" class="img-fluid img-thumbnail" src="assets/images/githubicon.svg" alt="GitHub Icon">
-      </div>
-    </div>
-      <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-flex mb-4 h-50 w-100">
-        <img id="js" class="img-fluid img-thumbnail" src="assets/images/hostingicon.svg" alt="Hosting Icon">
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-4 col-4">
-      <div class="d-flex mb-4 h-50 w-50">
-        <img id="bs" class="img-fluid img-thumbnail" src="assets/images/respicon.png" alt="Responsive Icon">
-      </div>
-    </div>
-    </div> 
-      </section>
-      <section class="projects" id="projects">
-        <div class="main-container">
-         <h2 class="projects-heading"><span class="heading-sec_main">
-          Current Projects
-        </span></h2>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <div class="main-container">
-         <h2 class="contact-heading"><span class="heading-sec_main">
-          Contact Me
-        </span></h2>
-        </div>
-      </section>
-
-
-
-    </main>
-
+    </section>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
   </body>
 </html>
