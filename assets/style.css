@@ -6,7 +6,7 @@
   --color-grey: #d7cec7;
   --color-white: #ece8e5;
   --f-main: "Fira Sans", sans-serif;
-  --transition: all 10s cubic-bezier(.165, .84, .44 1);
+  --transition: all .4s cubic-bezier(.165, .84, .44, 1);
   --shadow: 8px 15px 40px rgba(0, 0, 0, 0.1);
   --background: linear-gradient(109.6deg, rgb(187, 187, 187) 16%, rgb(5, 84, 94) 91.1%);
 }
@@ -63,6 +63,33 @@ img {
 
 .text-brand {
   color: #ece8e5;
+
+}
+
+.section-title {
+  max-width: 560px;
+  margin: 0 auto 60px auto;
+}
+
+.section-title .line {
+  width: 68px;
+  height: 2px;
+  background-color: var(--color-primary);
+  display: inline-block;
+}
+
+.section-connector {
+  position: relative;
+}
+
+.section-connector::after {
+  content: '';
+  width: 2px;
+  height: 100px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: -100px;
+  left: 50%;
 }
 
 .display-2 {
@@ -104,7 +131,7 @@ img {
 
 .navbar .navbar-nav .nav-link:hover {
   font-weight: 500;
-  color: var(--color-grey);
+  color: var(--color-primary);
 }
 
 .navbar-brand {
@@ -223,28 +250,31 @@ img {
   margin: 30px auto 68px auto;
 }
 
+/* Button */
+.btn {
+  padding: 10px 24px;
+  border-radius: 0;
+  border-width: 2px;
+  font-weight: 500;
+}
+
+.btn-brand,
+.btn-brand:focus {
+  background-color: var(--color-slate);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.btn-brand:hover {
+  background-color: transparent;
+  color: var(--color-slate);
+  border-color: var(--color-slate);
+}
+
 /* About */
 
-.section-title .line {
-  width: 68px;
-  height: 2px;
-  background-color: var(--color-primary);
-  display: inline-block;
-}
 
-.section-connector {
-  position: relative;
-}
 
-.section-connector::after {
-  content: '';
-  width: 2px;
-  height: 100px;
-  background-color: var(--color-primary);
-  position: absolute;
-  top: -100px;
-  left: 50%;
-}
 
 /* Projects */
 .projects {
@@ -262,10 +292,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.projects img {
-  object-fit: cover;
 }
 
 .projects img,
