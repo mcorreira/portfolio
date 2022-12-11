@@ -14,6 +14,7 @@
 /*Helper */
 body {
   font-family: var(--f-main);
+  color: var(--color-primary);
   line-height: 1.7;
   background: linear-gradient(109.6deg, rgb(187, 187, 187) 16%, rgb(5, 84, 94) 91.1%);
   height: 100%;
@@ -246,12 +247,12 @@ img {
 }
 
 /* Projects */
-.project {
+.projects {
   overflow: hidden;
   position: relative;
 }
 
-.project .content {
+.projects .content {
   position: absolute;
   top: 100%;
   left: 0;
@@ -263,29 +264,41 @@ img {
   justify-content: center;
 }
 
-.project img {
+.projects img {
   object-fit: cover;
 }
 
-.project img,
-.project .content {
+.projects img,
+.projects .content {
   transition: var(--transition);
 }
 
-.project:hover .content {
+.projects:hover .content {
   top: 0;
 }
 
-.project:hover img {
+.projects:hover img {
   transform: translateY(-100%);
 }
 
 /* Skills */
+
 .skills {
   margin-top: -1px;
   margin-left: -1px;
 }
 
-.skills img {
-  height: 40px;
+/* Contact */
+
+#contact .form-control {
+  border-radius: 0;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--color-primary);
+}
+
+#contact input.form-control {
+  height: 44px;
 }
