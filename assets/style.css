@@ -261,7 +261,7 @@ img {
 .btn-brand,
 .btn-brand:focus {
   background-color: var(--color-slate);
-  color: var(--color-white);
+  color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
@@ -272,6 +272,9 @@ img {
 }
 
 /* About */
+#megan {
+  border: 10px solid var(--color-primary);
+}
 
 
 
