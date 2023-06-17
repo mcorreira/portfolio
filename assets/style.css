@@ -8,9 +8,7 @@
   --f-main: "Fira Sans", sans-serif;
   --transition: all .4s cubic-bezier(.165, .84, .44, 1);
   --shadow: 8px 15px 40px rgba(0, 0, 0, 0.1);
-  --background: linear-gradient(90deg, hsla(209, 40%, 57%, 1) 0%, hsla(221, 100%, 27%, 1) 100%);
-
-
+  --background: linear-gradient(90deg, hsla(209, 40%, 57%, 1) 0%, hsla(221, 100%, 27%, 1) 100%)
 }
 
 /*Helper */
@@ -282,6 +280,11 @@ img {
 
 
 /* Projects */
+.projs {
+  height: 400px;
+  width: 400px;
+}
+
 .projects {
   overflow: hidden;
   position: relative;
